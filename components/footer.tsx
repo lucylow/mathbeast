@@ -1,29 +1,32 @@
 import Link from "next/link"
-import { Twitter, Facebook, Instagram, Linkedin } from "lucide-react"
+import { Twitter, Facebook, Instagram, Linkedin, Github } from "lucide-react"
 
 export function Footer() {
   return (
     <footer className="bg-secondary text-secondary-foreground py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          <div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
+          <div className="lg:col-span-2">
             <h3 className="text-2xl font-extrabold mb-5">MathBeast</h3>
-            <p className="text-secondary-foreground/80 mb-5 leading-relaxed">
+            <p className="text-secondary-foreground/80 mb-5 leading-relaxed max-w-sm">
               Revolutionizing math education through AI-powered adaptive learning. Unleash your mathematical potential
               today.
             </p>
             <div className="flex gap-4">
               <Link href="#" className="text-secondary-foreground hover:text-secondary-foreground/80 transition-colors">
-                <Twitter className="h-6 w-6" />
+                <Twitter className="h-5 w-5" />
               </Link>
               <Link href="#" className="text-secondary-foreground hover:text-secondary-foreground/80 transition-colors">
-                <Facebook className="h-6 w-6" />
+                <Facebook className="h-5 w-5" />
               </Link>
               <Link href="#" className="text-secondary-foreground hover:text-secondary-foreground/80 transition-colors">
-                <Instagram className="h-6 w-6" />
+                <Instagram className="h-5 w-5" />
               </Link>
               <Link href="#" className="text-secondary-foreground hover:text-secondary-foreground/80 transition-colors">
-                <Linkedin className="h-6 w-6" />
+                <Linkedin className="h-5 w-5" />
+              </Link>
+              <Link href="#" className="text-secondary-foreground hover:text-secondary-foreground/80 transition-colors">
+                <Github className="h-5 w-5" />
               </Link>
             </div>
           </div>
@@ -33,7 +36,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="#"
+                  href="/features"
                   className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors"
                 >
                   Features
@@ -41,15 +44,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors"
-                >
-                  Pricing
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
+                  href="/demo"
                   className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors"
                 >
                   Demo
@@ -57,48 +52,56 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/dashboard"
                   className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors"
                 >
-                  Download App
+                  Dashboard
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/gpt-oss"
+                  className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors"
+                >
+                  GPT-OSS-120B
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-5">Resources</h4>
+            <h4 className="text-lg font-semibold mb-5">Developers</h4>
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="#"
+                  href="/api-docs"
                   className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors"
                 >
-                  Math Blog
+                  API Documentation
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/api-status"
                   className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors"
                 >
-                  Study Guides
+                  API Status
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/data-sources"
                   className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors"
                 >
-                  Video Library
+                  Data Sources
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/pipeline"
                   className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors"
                 >
-                  Teacher Resources
+                  Pipeline
                 </Link>
               </li>
             </ul>
@@ -109,7 +112,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="#"
+                  href="/about"
                   className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors"
                 >
                   About Us
