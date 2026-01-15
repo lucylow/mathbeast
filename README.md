@@ -1,4 +1,4 @@
-````markdown
+
 # MathBeast
 
 **MathBeast** — an end-to-end platform that _aggregates, canonicalizes, decomposes, indexes, and serves_ structured math problems and step-by-step pedagogy for study, practice, and model training.
@@ -696,4 +696,4 @@ export:
 * On elevated solver latency: route to rule-based fast path or scale GPU pool.
 
 ```
-```
+
